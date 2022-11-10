@@ -5,6 +5,7 @@ import {
     Navigate,
     Outlet
 } from "react-router-dom";
+import Categories from "./pages/Categories/Categories";
 
 import Home from "./pages/Home";
 
@@ -19,7 +20,8 @@ export default function MyRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
-
+                <Route path="/products/categories/:name" element={<Home />} />
+                {/* <Route path='/Categories/categories' element={<Categories />} /> */}
 
                 {/* <Route element={<ProtectedRoute redirect="/Login" />}>
         <Route path='/History' element={<History />} />
