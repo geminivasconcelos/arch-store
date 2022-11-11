@@ -2,7 +2,7 @@
   background: rgb(199, 196, 196);
   height: 100%;
   width: 15%;
-  z-index: -1;
+
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(90, 89, 89, 0.25);
   display: flex;
@@ -26,4 +26,10 @@
 
 .btn-menu {
   margin-top: 10px;
+}
+
+.btn-menuLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(80, 80, 80);
 }
