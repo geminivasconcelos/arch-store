@@ -16,3 +16,8 @@
   font-weight: 400;
   margin-left: 40px;
 }
+
+.btn-menuLink {
+  cursor: pointer;
+  text-decoration: none;
+}
