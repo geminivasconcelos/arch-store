@@ -1,9 +1,10 @@
 import React from 'react';
-import { Container } from './style';
+
 import { useParams } from 'react-router-dom';
 import Categorias from '../../components/Categories';
 import Products from '../../components/Products';
 import Header from '../../components/Header';
+import Container from '../../components/Container';
 
 export default function Categories() {
     let category = {
