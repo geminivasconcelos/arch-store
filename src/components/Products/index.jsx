@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
-import api from '../../services/api.ts'
-
+import api from "../../services/api.js";
+import Container from "../../components/Container";
 
 export default function Products() {
   const [items, setItems] = useState();
-  // const Products: <Props> = ({ category }) => {
-  //     const [items, setItems]   = useState<Product[]>([]);
-  //     const [count, setCount] = useState(0);
+  const categoria = window.location.href;
+  const cat = categoria.split("/");
+  const outraCoisa = cat[cat.length - 1];
 
- useEffect(() => {
-    fetch('https://fakestoreapi.com/products/category/')
-      .then(response => response.json())
-      .then(json => console.log(json))
-    // api.get("categories/").then(response => response.json())
-    //     .then(json => console.log(json))
-    //     console.log(response.JSON());
-    //   setItems(response.data.data.products);
-    })
+
+  useEffect(() => {
+    api
+      .get("products/category/" + outraCoisa)
+      .then((response) => setItems(response.data, console.log(response.data)))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, []);
+
+
 }
-
