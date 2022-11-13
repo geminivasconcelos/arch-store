@@ -13,6 +13,7 @@ export default function Categories() {
 
   return (
     <Container>
+      <Categories />
       <Products category={category.name} />
     </Container>
   );

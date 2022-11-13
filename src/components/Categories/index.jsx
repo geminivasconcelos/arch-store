@@ -7,22 +7,22 @@ export default function Categories() {
       <h3 className="titulo-nav">Categorias</h3>
       <ul className="lista-categoria">
         <li className="btn-menu">
-          <a href="/categories/livros" className="btn-menuLink">
+          <a href="/products/category/jewelery" className="btn-menuLink">
             Livros
           </a>
         </li>
         <li className="btn-menu">
-          <a href="/products/category/jewelery" className="btn-menuLink">
+          <a href="/products/category/electronics" className="btn-menuLink">
             Canecas
           </a>
         </li>
         <li className="btn-menu">
-          <a href="/categories/mens-cloths" className="btn-menuLink">
+          <a href="/products/category/men's clothing" className="btn-menuLink">
             Moda Masculino
           </a>
         </li>
         <li className="btn-menu">
-          <a href="/categories/moda-feminina" className="btn-menuLink">
+          <a href="/products/category/women's clothing" className="btn-menuLink">
             Moda Feminino
           </a>
         </li>
