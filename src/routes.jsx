@@ -2,10 +2,8 @@ import {
     BrowserRouter,
     Routes,
     Route,
-    Navigate,
-    Outlet
 } from "react-router-dom";
-import Categories from "./pages/Categories/Categories";
+import Categories from "./pages/Categories";
 
 import Home from "./pages/Home";
 
@@ -15,8 +13,8 @@ export default function MyRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path="/products/category/:name" element={<Home />} />
-            
+                <Route path="/products/category/:name" element={<Categories />} />
+    
 
             </Routes>
         </BrowserRouter>
